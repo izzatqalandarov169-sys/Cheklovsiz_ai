@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheklovsiz AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header><h1>Cheklovsiz AI</h1><span>Local AI</span></header>
+    <nav>
+      <button class="tab active" data-mode="chat">💬 Chat</button>
+      <button class="tab" data-mode="video">🎬 Video</button>
+    </nav>
+    <section id="chat" class="panel active">
+      <div id="messages" class="messages"><div class="msg ai">Salom! Men Cheklovsiz AI loyihasining birinchi interfeys versiyasiman.</div></div>
+      <form id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Xabar yozing..." required><button>Yuborish</button></form>
+    </section>
+    <section id="video" class="panel">
+      <textarea id="videoPrompt" placeholder="Qanday video yaratilsin?"></textarea>
+      <div class="row"><select id="duration"><option value="5">5 soniya</option><option value="10">10 soniya</option></select><button id="generate">🎬 Generatsiya</button></div>
+      <div id="videoStatus" class="status">Video generator backend ulanmaguncha demo rejimida.</div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
